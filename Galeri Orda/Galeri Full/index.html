@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Foto Elegan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <h1>Kenangan Liburan di Pantai</h1>
+        <p class="description">
+            Kumpulan momen tak terlupakan saat menikmati matahari terbenam dan deburan ombak yang menenangkan.
+        </p>
+        <div class="metadata">
+            <div class="meta-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                </svg>
+                <span>Pantai Kuta, Bali</span>
+            </div>
+            <div class="meta-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                </svg>
+                <span id="date-display"></span>
+            </div>
+            <div class="meta-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                </svg>
+                <span id="time-display"></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="photo-gallery">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1517329782412-8664010b1de6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDR8fHBhc3RlbHxlbnwwfHx8fDE2MjkxNzQ1ODI&ixlib=rb-1.2.1&q=80&w=400" alt="Deskripsi foto 1">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1502759683299-cdcd6974244f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDEwfHxmbG93ZXJ8ZW58MHx8fHwxNjI5MTc0NjA5&ixlib=rb-1.2.1&q=80&w=400" alt="Deskripsi foto 2">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHBhc3RlbCUyMGZsb3dlcnN8ZW58MHx8fHwxNjI5MTc0NjMy&ixlib=rb-1.2.1&q=80&w=400" alt="Deskripsi foto 3">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1543322748-33df6d3db886?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDEyfHxwYXN0ZWwlMjBiZWFjaHxlbnwwfHx8fDE2MjkxNzQ2NTU&ixlib=rb-1.2.1&q=80&w=400" alt="Deskripsi foto 4">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1551887373-3c5bd224f6e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDEzfHxwYXN0ZWwlMjBza3l8ZW58MHx8fHwxNjI5MTc0Njc4&ixlib=rb-1.2.1&q=80&w=400" alt="Deskripsi foto 5">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDd8fHBhc3RlbCUyMGZsb3dlcnN8ZW58MHx8fHwxNjI5MTc0NjMy&ixlib=rb-1.2.1&q=80&w=400" alt="Deskripsi foto 6">
+            </div>
+        </div>
+    </main>
+
+    <div id="popup-overlay" class="popup-overlay">
+        <span id="close-btn" class="close-btn">&times;</span>
+        <div class="popup-content">
+            <img id="popup-img" class="popup-img" src="" alt="Tampilan diperbesar">
+        </div>
+    </div>
+
+    <!-- Footer -->
+<svg xmlns="http://www.w3.org/2000/svg" class="svg-footer" viewBox="0 0 1440 320"><path fill="#202938" fill-opacity="1" d="M0,192L13.3,208C26.7,224,53,256,80,245.3C106.7,235,133,181,160,133.3C186.7,85,213,43,240,69.3C266.7,96,293,192,320,229.3C346.7,267,373,245,400,213.3C426.7,181,453,139,480,122.7C506.7,107,533,117,560,112C586.7,107,613,85,640,112C666.7,139,693,213,720,229.3C746.7,245,773,203,800,160C826.7,117,853,75,880,85.3C906.7,96,933,160,960,170.7C986.7,181,1013,139,1040,128C1066.7,117,1093,139,1120,138.7C1146.7,139,1173,117,1200,138.7C1226.7,160,1253,224,1280,234.7C1306.7,245,1333,203,1360,192C1386.7,181,1413,203,1427,213.3L1440,224L1440,320L1426.7,320C1413.3,320,1387,320,1360,320C1333.3,320,1307,320,1280,320C1253.3,320,1227,320,1200,320C1173.3,320,1147,320,1120,320C1093.3,320,1067,320,1040,320C1013.3,320,987,320,960,320C933.3,320,907,320,880,320C853.3,320,827,320,800,320C773.3,320,747,320,720,320C693.3,320,667,320,640,320C613.3,320,587,320,560,320C533.3,320,507,320,480,320C453.3,320,427,320,400,320C373.3,320,347,320,320,320C293.3,320,267,320,240,320C213.3,320,187,320,160,320C133.3,320,107,320,80,320C53.3,320,27,320,13,320L0,320Z"></path></svg>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">
+            <div class="footer-logo-icon">
+              <img src="asset/Logo/logo-ordajabar-putih.png" alt="Logo ORARI Jabar" class="footer-logo-img">
+            </div>
+          </div>
+          <!--
+          <p>Organisasi Amatir Radio Indonesia Daerah Jawa Barat - Membangun komunikasi yang kuat dan melayani
+            masyarakat melalui teknologi radio amatir.</p>
+          -->
+          <div class="social-media">
+            <a href="https://www.facebook.com/share/g/1JVhXt9Cu5/"><i class="fab fa-facebook"></i></a>
+            <!--<a href="#"><i class="fab fa-twitter"></i></a>-->
+            <a href="https://www.instagram.com/officialorari/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@orariofficial"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h5>Halaman</h5>
+          <ul>
+            <li><a href="#tentang">Tentang Kami</a></li>
+            <li><a href="https://yh1aa.org/blog">Berita</a></li>
+            <li><a href="https://yh1aa.org/kegiatan">Kegiatan</a></li>
+            <li><a href="https://yh1aa.org/hubungi_kami">hubungi Kami</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h5>Media Sosial</h5>
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <p>Jl. Situ Aksan No.35, 40221. Sukahaji, Kec.Babakan Ciparay. Kota Bandung. Jawa Barat 40265</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span>(022) 6036619</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>info@orarjabar.or.id</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h5>Organisasi Amatir Radio Indonesia</h5>
+          <div class="partners">
+            <div class="partner">
+              <img src="asset/Logo/logo iaru.png" alt="ICOM">
+            </div>
+            <div class="partner">
+              <img src="asset/Logo/Logo iaru R-3.png" alt="YAESU">
+            </div>
+            <div class="partner">
+              <img src="asset/Logo/logo-orari.png" alt="KENWOOD">
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; Copyright 2025 ORARI JABAR. All Rights Reserved.</p>
+
+        <div class="footer-links">
+          <a href="https://policies.google.com/privacy?hl=id">Kebijakan Privasi</a>
+          <a href="https://policies.google.com/terms">Syarat & Ketentuan</a>
+        </div>
+
+        <span class="footer-author">Created by <strong>YG1BTK</strong></span>
+      </div>
+
+
+
+    </div>
+  </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
